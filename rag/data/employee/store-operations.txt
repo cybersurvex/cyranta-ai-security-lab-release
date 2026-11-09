@@ -1,0 +1,5 @@
+TITLE: Cyranta Store Operations Guide
+CLASSIFICATION: internal
+
+Employees may use the internal product catalogue to answer fictional
+availability, sizing, delivery, and returns questions.

@@ -1,0 +1,4 @@
+evidence_id,control_id,description,location,frequency,owner,status
+E-AI-001,C-AI-001,Promptfoo red-team report,results/promptfoo/,Per material change,AI Security,Planned
+E-AI-002,C-AI-002,Secret exfiltration before-after finding,findings/AI-002.md,Per material change,AI Security,Planned
+E-AI-003,C-AI-003,GitHub Actions security regression run,.github/workflows/,Each push/manual full scan,AI Security,Planned

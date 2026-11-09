@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "controls": [
+    {
+      "control_id": "CYR-CTL-001",
+      "title": "Chatbot input controls and blocked-event detection",
+      "asset_ids": [
+        "CYR-AST-001",
+        "CYR-AST-004"
+      ],
+      "nist_ai_rmf_functions": [
+        "MAP",
+        "MEASURE"
+      ],
+      "iso_42001_theme": "operational controls",
+      "evidence": [
+        {
+          "path": "app/security.py",
+          "kind": "implementation",
+          "path_type": "file"
+        },
+        {
+          "path": "monitoring/detector.py",
+          "kind": "implementation",
+          "path_type": "file"
+        },
+        {
+          "path": "monitoring/tests/test_detector.py",
+          "kind": "test",
+          "path_type": "file"
+        }
+      ],
+      "risk_ids": [],
+      "known_gaps": [
+        "Input-control effectiveness has not been independently assessed.",
+        "Detector tests are not evidence of comprehensive prompt-injection resistance."
+      ],
+      "owner": null,
+      "review_status": "needs_human_review"
+    },
+    {
+      "control_id": "CYR-CTL-002",
+      "title": "RAG access and provenance controls",
+      "asset_ids": [
+        "CYR-AST-002"
+      ],
+      "nist_ai_rmf_functions": [
+        "MAP",
+        "MEASURE",
+        "MANAGE"
+      ],
+      "iso_42001_theme": "operational controls",
+      "evidence": [
+        {
+          "path": "rag/app",
+          "kind": "implementation",
+          "path_type": "directory"
+        },
+        {
+          "path": "rag/tests/test_access_control.py",
+          "kind": "test",
+          "path_type": "file"
+        },
+        {
+          "path": "rag/tests/test_provenance.py",
+          "kind": "test",
+          "path_type": "file"
+        }
+      ],
+      "risk_ids": [],
+      "known_gaps": [
+        "RAG access tests do not establish comprehensive deployment security.",
+        "Embedded ChromaDB dependency risk remains open under CYR-CTL-006."
+      ],
+      "owner": null,
+      "review_status": "needs_human_review"
+    },
+    {
+      "control_id": "CYR-CTL-003",
+      "title": "Agent tool authorization and approval",
+      "asset_ids": [
+        "CYR-AST-003"
+      ],
+      "nist_ai_rmf_functions": [
+        "MAP",
+        "MEASURE",
+        "MANAGE"
+      ],
+      "iso_42001_theme": "operational controls",
+      "evidence": [
+        {
+          "path": "agent/security/tool_gateway.py",
+          "kind": "implementation",
+          "path_type": "file"
+        },
+        {
+          "path": "agent/tests/test_tool_gateway.py",
+          "kind": "test",
+          "path_type": "file"
+        }
+      ],
+      "risk_ids": [],
+      "known_gaps": [
+        "Existing tests are not evidence of production tool integration approval."
+      ],
+      "owner": null,
+      "review_status": "needs_human_review"
+    },
+    {
+      "control_id": "CYR-CTL-004",
+      "title": "Security telemetry and gateway audit",
+      "asset_ids": [
+        "CYR-AST-001",
+        "CYR-AST-003",
+        "CYR-AST-004"
+      ],
+      "nist_ai_rmf_functions": [
+        "GOVERN",
+        "MEASURE"
+      ],
+      "iso_42001_theme": "performance evaluation and improvement",
+      "evidence": [
+        {
+          "path": "monitoring/detector.py",
+          "kind": "implementation",
+          "path_type": "file"
+        },
+        {
+          "path": "monitoring/gateway_detection.py",
+          "kind": "implementation",
+          "path_type": "file"
+        },
+        {
+          "path": "monitoring/tests/test_gateway_detection.py",
+          "kind": "test",
+          "path_type": "file"
+        }
+      ],
+      "risk_ids": [],
+      "known_gaps": [
+        "File references alone do not demonstrate operational retention or log access controls.",
+        "Optional raw telemetry logging requires separate privacy review."
+      ],
+      "owner": null,
+      "review_status": "needs_human_review"
+    },
+    {
+      "control_id": "CYR-CTL-005",
+      "title": "Detection incident triage and exercise",
+      "asset_ids": [
+        "CYR-AST-004"
+      ],
+      "nist_ai_rmf_functions": [
+        "MEASURE",
+        "MANAGE"
+      ],
+      "iso_42001_theme": "performance evaluation and improvement",
+      "evidence": [
+        {
+          "path": "monitoring/incident_simulation.py",
+          "kind": "implementation",
+          "path_type": "file"
+        },
+        {
+          "path": "monitoring/tests/test_incident_simulation.py",
+          "kind": "test",
+          "path_type": "file"
+        },
+        {
+          "path": "monitoring/playbooks/CYR-IR-001.md",
+          "kind": "documentation",
+          "path_type": "file"
+        }
+      ],
+      "risk_ids": [],
+      "known_gaps": [
+        "Scenario exercises are fictional and do not demonstrate real incident response readiness.",
+        "Evidence hashes are unsigned and do not establish forensic custody."
+      ],
+      "owner": null,
+      "review_status": "needs_human_review"
+    },
+    {
+      "control_id": "CYR-CTL-006",
+      "title": "Dependency auditing and residual risk",
+      "asset_ids": [
+        "CYR-AST-002",
+        "CYR-AST-005"
+      ],
+      "nist_ai_rmf_functions": [
+        "GOVERN",
+        "MEASURE",
+        "MANAGE"
+      ],
+      "iso_42001_theme": "AI risk assessment and treatment",
+      "evidence": [
+        {
+          "path": "scripts/security_gate.sh",
+          "kind": "ci",
+          "path_type": "file"
+        },
+        {
+          "path": "requirements-rag.txt",
+          "kind": "documentation",
+          "path_type": "file"
+        },
+        {
+          "path": "docs/security/CHROMADB-RISK-ASSESSMENT.md",
+          "kind": "documentation",
+          "path_type": "file"
+        }
+      ],
+      "risk_ids": [
+        "CYRANTA-DEP-001"
+      ],
+      "known_gaps": [
+        "ChromaDB 1.5.9 has unresolved dependency vulnerability findings.",
+        "RAG dependency audit is not a passing CI gate.",
+        "No approved remediation or recorded risk acceptance exists."
+      ],
+      "owner": null,
+      "review_status": "needs_human_review"
+    },
+    {
+      "control_id": "CYR-CTL-007",
+      "title": "AI asset ownership and risk oversight",
+      "asset_ids": [
+        "CYR-AST-001",
+        "CYR-AST-002",
+        "CYR-AST-003",
+        "CYR-AST-004",
+        "CYR-AST-005"
+      ],
+      "nist_ai_rmf_functions": [
+        "GOVERN",
+        "MAP"
+      ],
+      "iso_42001_theme": "leadership and accountability",
+      "evidence": [
+        {
+          "path": "governance/project5/assets.json",
+          "kind": "documentation",
+          "path_type": "file"
+        },
+        {
+          "path": "governance/project5/risks.json",
+          "kind": "documentation",
+          "path_type": "file"
+        },
+        {
+          "path": "docs/security/PROJECT4-SECURITY-CLOSURE.md",
+          "kind": "documentation",
+          "path_type": "file"
+        }
+      ],
+      "risk_ids": [
+        "CYRANTA-DEP-001"
+      ],
+      "known_gaps": [
+        "All declared asset owners remain unassigned.",
+        "ChromaDB risk has no assigned risk owner or acceptance decision.",
+        "Organizational accountability has not been attested."
+      ],
+      "owner": null,
+      "review_status": "needs_human_review"
+    }
+  ]
+}

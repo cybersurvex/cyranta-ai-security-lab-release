@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project": "Cyranta Secure RAG Lab",
+  "approved_sources": {
+    "rag/data/public/returns-policy.txt": {
+      "sha256": "1B4B9403386CE7EBEC9F4F454463C0B3E10DC436D6ED8A15E436149CE4C25401",
+      "classification": "public",
+      "allowed_roles": [
+        "employee",
+        "hr"
+      ],
+      "source_authority": "canonical"
+    },
+    "rag/data/employee/store-operations.txt": {
+      "sha256": "565991657AF6B43C3EB5D6FE1B53CA6E954894EF71324ECDD3A74545B3C3660A",
+      "classification": "internal",
+      "allowed_roles": [
+        "employee",
+        "hr"
+      ],
+      "source_authority": "standard"
+    },
+    "rag/data/hr/compensation-guidance.txt": {
+      "sha256": "AAE0E5A31E1DDD275B5B9E461B81837E5FCDD515D9B3DB85ABD96A5F37D5B221",
+      "classification": "hr-restricted",
+      "allowed_roles": [
+        "hr"
+      ],
+      "source_authority": "canonical"
+    },
+    "rag/data/employee/returns-analytics-retention.txt": {
+      "sha256": "070EA8D24EFE053AE963669FF62EACB356E0B6108F1661FE68917275493E0926",
+      "classification": "internal",
+      "allowed_roles": [
+        "employee",
+        "hr"
+      ],
+      "source_authority": "supporting"
+    }
+  }
+}

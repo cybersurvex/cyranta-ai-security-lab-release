@@ -1,0 +1,4 @@
+control_id,control,owasp_llm,nist_ai_rmf,mitre_atlas,evidence_requirement
+C-AI-001,Prompt injection detection and application-side enforcement,LLM01,MEASURE/MANAGE,Map during assessment,Before/after red-team result plus telemetry
+C-AI-002,No credentials in model context plus output DLP,LLM02;LLM07,MAP/MANAGE,Map during assessment,Prompt review plus secret-exfiltration retest
+C-AI-003,Security regression testing in CI,LLM01;LLM02;LLM07,MEASURE,Map during assessment,Workflow run artifact and passing threshold

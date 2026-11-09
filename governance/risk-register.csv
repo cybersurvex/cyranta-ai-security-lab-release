@@ -1,0 +1,3 @@
+risk_id,title,asset,likelihood,impact,inherent_risk,treatment,control_id,status,owner,evidence
+R-AI-001,Prompt injection can alter assistant behavior,Customer support assistant,High,Medium,High,Mitigate,C-AI-001,Planned,AI Security,findings/AI-001.md
+R-AI-002,Sensitive data can leak from model context,Customer support assistant,Medium,High,High,Mitigate,C-AI-002,Planned,AI Security,findings/AI-002.md

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "fixture_id": "rag-cross-role-v1",
+  "scenario_id": "CYR-P6-SCN-003",
+  "fixture_kind": "synthetic_metadata_only",
+  "input_class": "fictional_cross_role_retrieval",
+  "expected_signal": "retrieval_access_denied",
+  "synthetic": true,
+  "contains_live_payload": false
+}

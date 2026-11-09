@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "fixture_id": "chatbot-encoded-variant-v1",
+  "scenario_id": "CYR-P6-SCN-002",
+  "fixture_kind": "synthetic_metadata_only",
+  "input_class": "fictional_encoded_instruction",
+  "expected_signal": "guard_decision_recorded",
+  "synthetic": true,
+  "contains_live_payload": false
+}

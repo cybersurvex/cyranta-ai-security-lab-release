@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "fixture_id": "agent-denied-action-v1",
+  "scenario_id": "CYR-P6-SCN-005",
+  "fixture_kind": "synthetic_metadata_only",
+  "input_class": "fictional_unapproved_tool_request",
+  "expected_signal": "tool_gateway_denial",
+  "synthetic": true,
+  "contains_live_payload": false
+}

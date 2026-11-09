@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "fixture_id": "rag-provenance-boundary-v1",
+  "scenario_id": "CYR-P6-SCN-004",
+  "fixture_kind": "synthetic_metadata_only",
+  "input_class": "fictional_untrusted_document",
+  "expected_signal": "provenance_and_access_decision",
+  "synthetic": true,
+  "contains_live_payload": false
+}

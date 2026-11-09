@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "risks": [
+    {
+      "risk_id": "CYRANTA-DEP-001",
+      "asset_ids": ["CYR-AST-002"],
+      "category": "vulnerable_dependency",
+      "component": "chromadb",
+      "observed_version": "1.5.9",
+      "status": "open",
+      "decision": "pending_review",
+      "risk_owner": null,
+      "likelihood": null,
+      "impact": null,
+      "finding_records": 5,
+      "advisories": [
+        "PYSEC-2026-311",
+        "PYSEC-2026-3813",
+        "PYSEC-2026-3814",
+        "PYSEC-2026-3815"
+      ],
+      "source_document": "docs/security/CHROMADB-RISK-ASSESSMENT.md"
+    }
+  ]
+}

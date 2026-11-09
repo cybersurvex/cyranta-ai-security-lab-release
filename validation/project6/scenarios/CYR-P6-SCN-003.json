@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "scenario_id": "CYR-P6-SCN-003",
+  "title": "RAG fictional employee restricted document",
+  "scenario_type": "rag_cross_role_access",
+  "mode": "isolated_offline_fixture",
+  "asset_ids": [
+    "CYR-AST-002"
+  ],
+  "control_ids": [
+    "CYR-CTL-002"
+  ],
+  "fixture_id": "rag-cross-role-v1",
+  "fixture_path": "validation/project6/fixtures/CYR-P6-SCN-003.json",
+  "expected_decision": "deny",
+  "assertion_id": "rag_denied_before_generation",
+  "execution_status": "not_run",
+  "finding_id": null,
+  "registered_risk_ids": [],
+  "human_review_required": true
+}

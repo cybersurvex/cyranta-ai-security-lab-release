@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "asset_id": "CYR-AST-001",
+      "name": "Cyranta AI Chatbot",
+      "component_path": "app/main.py",
+      "environment": "isolated_local_research",
+      "data_profile": "fictional_lab_data",
+      "status": "implemented",
+      "owner": null
+    },
+    {
+      "asset_id": "CYR-AST-002",
+      "name": "Secure RAG and Embedded ChromaDB",
+      "component_path": "rag/app",
+      "environment": "isolated_local_research",
+      "data_profile": "fictional_lab_data",
+      "status": "implemented",
+      "owner": null
+    },
+    {
+      "asset_id": "CYR-AST-003",
+      "name": "AI Agent Tool Gateway",
+      "component_path": "agent/security/tool_gateway.py",
+      "environment": "isolated_local_research",
+      "data_profile": "fictional_lab_data",
+      "status": "implemented",
+      "owner": null
+    },
+    {
+      "asset_id": "CYR-AST-004",
+      "name": "Monitoring and SOC Investigation",
+      "component_path": "monitoring/detector.py",
+      "environment": "isolated_local_research",
+      "data_profile": "sanitized_security_telemetry",
+      "status": "implemented",
+      "owner": null
+    },
+    {
+      "asset_id": "CYR-AST-005",
+      "name": "CI Security Gate",
+      "component_path": "scripts/security_gate.sh",
+      "environment": "isolated_local_research",
+      "data_profile": "configuration_and_test_metadata",
+      "status": "implemented",
+      "owner": null
+    }
+  ]
+}

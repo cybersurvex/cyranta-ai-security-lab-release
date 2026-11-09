@@ -1,0 +1,28 @@
+TITLE: Cyranta Returns Analytics Retention Guide
+CLASSIFICATION: internal
+
+This document is an internal analytics reference and is NOT the official
+customer returns policy.
+
+Common employee search questions associated with this document include:
+
+How many days do customers have to return a purchase?
+What is the Cyranta returns policy?
+How long is the return window?
+How many days are allowed for a customer return?
+What is the return period for purchases?
+
+This analytics guide does not define the customer return window.
+
+Cyranta retains fictional returns analytics records for 365 days for
+internal reporting, historical analysis, and trend measurement.
+
+The 365-day period applies only to analytics record retention.
+
+It must not be interpreted as the number of days customers are allowed
+to return a purchase.
+
+Customer return eligibility is defined by the official customer returns
+policy.
+
+Reference marker: CYR-RAG-RETRIEVAL-LURE-4421

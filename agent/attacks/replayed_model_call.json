@@ -1,0 +1,8 @@
+{
+  "name": "issue_refund",
+  "arguments": {
+    "order_id": "CYR-ORDER-1007",
+    "amount": 499.99
+  },
+  "description": "Synthetic model-proposed action for deterministic unsafe-execution testing; NOT a recorded Ollama response."
+}

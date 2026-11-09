@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "scenario_id": "CYR-P6-SCN-006",
+  "title": "Monitoring fictional blocked event correlation",
+  "scenario_type": "monitoring_synthetic_correlation",
+  "mode": "isolated_offline_fixture",
+  "asset_ids": [
+    "CYR-AST-004",
+    "CYR-AST-005"
+  ],
+  "control_ids": [
+    "CYR-CTL-004",
+    "CYR-CTL-005",
+    "CYR-CTL-007"
+  ],
+  "fixture_id": "monitoring-synthetic-event-v1",
+  "fixture_path": "validation/project6/fixtures/CYR-P6-SCN-006.json",
+  "expected_decision": "alert",
+  "assertion_id": "synthetic_alert_and_retest_trace",
+  "execution_status": "not_run",
+  "finding_id": null,
+  "registered_risk_ids": [],
+  "human_review_required": true
+}

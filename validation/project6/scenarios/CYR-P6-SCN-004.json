@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "scenario_id": "CYR-P6-SCN-004",
+  "title": "RAG fictional document authority boundary",
+  "scenario_type": "rag_document_instruction",
+  "mode": "isolated_offline_fixture",
+  "asset_ids": [
+    "CYR-AST-002",
+    "CYR-AST-004"
+  ],
+  "control_ids": [
+    "CYR-CTL-002",
+    "CYR-CTL-004"
+  ],
+  "fixture_id": "rag-provenance-boundary-v1",
+  "fixture_path": "validation/project6/fixtures/CYR-P6-SCN-004.json",
+  "expected_decision": "deny",
+  "assertion_id": "rag_authority_boundary_unchanged",
+  "execution_status": "not_run",
+  "finding_id": null,
+  "registered_risk_ids": [],
+  "human_review_required": true
+}

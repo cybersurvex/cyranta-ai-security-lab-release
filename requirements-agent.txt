@@ -1,0 +1,3 @@
+# Isolated Project 3 environment. Runs only locally against fictional mock tools.
+httpx>=0.27,<1
+pytest>=8,<10

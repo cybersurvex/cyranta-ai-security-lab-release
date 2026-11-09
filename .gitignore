@@ -1,0 +1,57 @@
+# ---------------------------------------------------------
+# Python
+# ---------------------------------------------------------
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# ---------------------------------------------------------
+# Local configuration
+# ---------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------
+# Runtime logs / telemetry
+# ---------------------------------------------------------
+*.log
+telemetry/*.jsonl
+
+# ---------------------------------------------------------
+# Promptfoo local/generated state
+# ---------------------------------------------------------
+node_modules/
+.promptfoo/
+
+# Raw/generated Promptfoo result files stay local.
+# Curated evidence belongs under results/.
+redteam/promptfoo/*.json
+
+# ---------------------------------------------------------
+# IDE / OS
+# ---------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------
+# Temporary files
+# ---------------------------------------------------------
+*.tmp
+# Garak isolated environment
+.venv-garak/
+
+# PyRIT isolated environment
+.venv-pyrit/
+
+.venv-rag/
+rag/.chroma/
+.venv-agent/
+telemetry/triage.json
+telemetry/*.html
+telemetry/incidents/
+telemetry/governance/

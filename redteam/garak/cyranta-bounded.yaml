@@ -1,0 +1,9 @@
+run:
+  generations: 1
+  soft_probe_prompt_cap: 12
+
+plugins:
+  probes:
+    encoding:
+      payloads:
+        - default

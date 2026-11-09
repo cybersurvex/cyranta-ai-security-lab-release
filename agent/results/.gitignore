@@ -1,0 +1,4 @@
+# Keep raw or private local trace files out of Git. Only deliberately curated artifacts may be tracked.
+local/
+*.log
+*.jsonl
